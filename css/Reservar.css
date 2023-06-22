@@ -1,0 +1,75 @@
+
+
+.navbar-brand {
+    font-weight: bold;
+}
+.btn {
+    color: #FFFFFF;
+    /* Cambia el color del texto del botón a blanco */
+    background-color: black;
+    /* Cambia el color de fondo del botón a azul */
+}
+
+#BotonDropDown {
+    color: wheat;
+    /* Cambia el color del texto a rojo */
+    font-weight: bold;
+    /* Aplica negrita al texto */
+    text-decoration: none;
+    /* Quita la decoración de subrayado */
+    margin-right: 40px;
+}
+
+#DropDesplegado {
+    background-color: black;
+    /* Cambia el color de fondo a rojo */
+    margin-right: 25%;
+}
+
+#DropDesplegado a {
+    color: wheat;
+    /* Cambia el color de fondo a rojo */
+    margin-right: 25%;
+}
+
+#Navegacion {
+    background-color: rgba(245, 222, 179, 0.5);
+}
+
+#mi-header {
+    background-color: #f2f2f2;
+    /* Color de fondo del encabezado */
+}
+
+#mi-header nav {
+    background-color: inherit;
+    /* Hereda el color de fondo del encabezado */
+    padding: 10px;
+    /* Ajusta el espacio interno del menú de navegación según sea necesario */
+}
+
+#TitulosCartas{
+    font-weight: bold;
+    text-align: left;
+}
+
+
+#Footer{
+
+    margin-top: 5%;
+    color: wheat;
+    background-color: black;
+}
+
+#ProgresoBarra1 div{
+    background-color: #69cd68
+}
+
+#ProgresoBarra2 div{
+    background-color:  wheat
+}
+
+#ProgresoBarra3 div{
+    background-color: #84b6f4
+}
+
