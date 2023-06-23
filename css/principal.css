@@ -71,6 +71,7 @@ html {
 
   .contenedor { max-width: 120rem; margin: 0 auto;
   }
+  
   /* Grid */
   .grid {
   display: grid;
