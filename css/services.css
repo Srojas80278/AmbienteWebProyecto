@@ -1,13 +1,9 @@
 /* Services */
 
-.containerServices {
+.container {
     text-align: center;
     min-height: calc(100vh - 70px);
     margin-bottom: 70px;
-  }
-
-  .containerServices p{
-    padding: 5%;
   }
   
   h1 {
