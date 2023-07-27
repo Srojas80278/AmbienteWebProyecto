@@ -30,3 +30,33 @@ function IngresaProducto($pDescripcion, $pPrecio)
 
     return $retorno;
 }
+
+
+function readProducto()
+{
+    $retorno = false;
+    try {
+        $conexion = Conecta();
+
+        //formato de datos UTF-8
+        $stmt = "SELECT * FROM productos";
+        $result = mysqli_query($conexion, $stmt);
+        if (!mysqli_error($conexion)) {
+            echo "conexion realizada";
+        }
+
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo "<br>";
+            echo "Id: " . $row["id_producto"] . "<br>";
+            echo "Descripcion: " . $row["descripcion"] . "<br>";
+            echo "Precio: " . $row["precio"] . "<br>";
+        }
+
+    } catch (\Throwable $th) {
+        echo $th;
+    } finally {
+        Desconecta($conexion);
+    }
+
+    return $stmt;
+}
