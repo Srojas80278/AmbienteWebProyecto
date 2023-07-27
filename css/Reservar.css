@@ -1,8 +1,7 @@
-
-
 .navbar-brand {
     font-weight: bold;
 }
+
 .btn {
     color: #FFFFFF;
     /* Cambia el color del texto del botón a blanco */
@@ -37,39 +36,43 @@
 }
 
 #mi-header {
-    background-color: #f2f2f2;
+    background-color: red;
     /* Color de fondo del encabezado */
+
 }
 
 #mi-header nav {
-    background-color: inherit;
-    /* Hereda el color de fondo del encabezado */
+    background-color: red;
     padding: 10px;
     /* Ajusta el espacio interno del menú de navegación según sea necesario */
 }
 
-#TitulosCartas{
+#TitulosCartas {
     font-weight: bold;
     text-align: left;
 }
 
 
-#Footer{
+#Footer {
 
     margin-top: 5%;
     color: wheat;
     background-color: black;
 }
 
-#ProgresoBarra1 div{
+#ProgresoBarra1 div {
     background-color: #69cd68
 }
 
-#ProgresoBarra2 div{
-    background-color:  wheat
+#ProgresoBarra2 div {
+    background-color: wheat
 }
 
-#ProgresoBarra3 div{
+#ProgresoBarra3 div {
     background-color: #84b6f4
 }
 
+#navbarNav{
+    display: flex;
+    justify-content: space-around;
+}
