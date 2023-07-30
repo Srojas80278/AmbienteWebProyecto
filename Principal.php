@@ -74,7 +74,7 @@
         <ul id="DropDesplegado" class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Perfil</a></li>
           <li><a class="dropdown-item" href="#">Métodos de pago</a></li>
-          <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+          <li><a class="dropdown-item" href="../php/Salir.php">Cerrar Sesión</a></li>
         </ul>
       </div>
 

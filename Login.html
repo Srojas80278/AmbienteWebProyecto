@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div id="mensaje" style="display: none;"></div>
     <div class="container-form sign-up">
         <div class="Bienvenido">
             <div class="message">
@@ -23,13 +24,13 @@
                 <button class="sign-up-btn">Iniciar Sesión</button>
             </div>
         </div>
-        <form class="formulario">
+        <form class="formulario" action="php/Registro.php" onsubmit="return validarRegistro()" method="POST">
             <h2 class="crear-cuenta">Registrate</h2>
             <p class="cuenta-gratis">Crear una cuenta</p>
-            <input type="text" placeholder="Nombre completo">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <input type="button" value="Registrarse">
+            <input type="text" placeholder="Usuario" name="usuario_registro" maxlength="20" required>
+            <input type="email" placeholder="Email" name="emial_registro" required>
+            <input type="password" placeholder="Contraseña" name="contrasena_registro" required>
+            <input type="submit" value="Registrarse" name="RegistroSesion">
             <br>
             <hr>
             <br>
@@ -47,12 +48,12 @@
         </form>
     </div>
     <div class="container-form sign-in">
-        <form class="formulario">
+        <form class="formulario" action="php/login.php" method="POST" onsubmit="return validarInicioSesion()">
             <h2 class="crear-cuenta">Iniciar Sesión</h2>
             <p class="cuenta-gratis">¿Aún no tienes una cuenta?</p>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <input type="button" value="Iniciar sesión">
+            <input type="text" placeholder="Usuario" name="usuario_login" required>
+            <input type="password" placeholder="Contraseña" name="contrasena_login" required>
+            <input type="submit"  value="Iniciar sesion" name="InicioSesion">
             <br>
             <hr>
             <br>

@@ -120,7 +120,7 @@ body {
     color: white;
 }
 
-.formulario input[type="button"] {
+.formulario input[type="submit"] {
     width: 60%;
     margin: auto;
     border: solid thin white;
@@ -155,6 +155,9 @@ body {
     height: 1px;
     background-color: black;
 }
+
+
+
 
 /*Web responsive*/
   
