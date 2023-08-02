@@ -17,7 +17,6 @@
                 <label for="precio">Precio:</label>
                 <input type="number" name="precio" id="precio" placeholder="Precio">
             </div>
-
             <button type="submit">Procesar datos</button>
         </form>
 

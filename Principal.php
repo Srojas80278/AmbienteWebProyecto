@@ -17,70 +17,7 @@
 
 <body>
 
-  <!-- Header -->
-  <!-- Logo -->
-  <header id="mi-header">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="/img/header/Logo2.png" alt="" width="50" height="50">
-            Utopía Beauty Salón</a>
-        </div>
-      </nav>
-
-      <!-- Barra navegación -->
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Principal.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="Services.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="Insertar.html">Insertar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="Insertar.html">Insertar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="Insertar.html">Insertar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="Insertar.html">Insertar</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Carrito de Compras -->
-      <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="ShoppingCart.html">
-            <img src="/img/header/carro-de-la-compra (2).png" alt="" width="50" height="50">
-          </a>
-        </div>
-      </nav>
-
-      <!-- DropDown -->
-      <div class="dropdown">
-        <a id="BotonDropDown" class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          <img src="/img/header/Logo2.png" alt="" width="30" height="30">
-        </a>
-        </a>
-        <ul id="DropDesplegado" class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Perfil</a></li>
-          <li><a class="dropdown-item" href="#">Métodos de pago</a></li>
-          <li><a class="dropdown-item" href="../php/Salir.php">Cerrar Sesión</a></li>
-        </ul>
-      </div>
-
-
-    </nav>
-  </header>
+<?php include 'include/templates/header.php'; ?>
 
   <!-- Main-->
   <br>
@@ -132,15 +69,8 @@
       </div>
     </div>
    
-  </div>
-
-   <br>
-   <br>
-
-
-  
+  </div><br><br>
   <div class="container text-center">
-    
     <div class="row">
       <div class="col">
         <div class="card" style="width: 20rem;">

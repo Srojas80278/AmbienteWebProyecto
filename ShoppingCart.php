@@ -14,61 +14,9 @@
 </head>
 
 <body>
-  <header id="mi-header">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="img/header/Logo2.png" alt="" width="50" height="50">
-            Utopía Beauty Salón</a>
-        </div>
-      </nav>
-
-      <!-- Barra navegación -->
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Login.html">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="Services.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="Reservar.html">Reservar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="ShoppingCart.html">Realizar Compra</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Carrito de Compras -->
-      <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="ShoppingCart.html">
-            <img src="img/header/carro-de-la-compra (2).png" alt="" width="50" height="50">
-          </a>
-        </div>
-      </nav>
-
-      <!-- DropDown -->
-      <div class="dropdown">
-        <a id="BotonDropDown" class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          <img src="img/header/Logo2.png" alt="" width="30" height="30">
-        </a>
-        </a>
-        <ul id="DropDesplegado" class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Perfil</a></li>
-          <li><a class="dropdown-item" href="#">Métodos de pago</a></li>
-          <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
+  
+  <?php include 'include/templates/header.php'; ?>
+  
   <div class="containerCart">
     <h1>Carrito de Compras</h1>
     <div class="cart-items">

@@ -34,14 +34,6 @@
     text-decoration: none;
   }
   
-  /* Footer */
-  footer {
-    background-color: rgba(237, 154, 94, 0.861);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-  }
   
   .copy {
     text-align: center;
