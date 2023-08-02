@@ -19,10 +19,10 @@ if(isset($_POST['RegistroSesion'])) {
     if ($resultado) {
         $_SESSION['username']=$NombreCompleto;
         echo "¡Usuario creado correctamente!";
-        header("refresh:1; url=../Login.html");
+        header("refresh:1; url=../Login.php");
     } else {
         echo "Credenciales invalidos";
-        header("refresh:1; url=../Login.html");
+        header("refresh:1; url=../Login.php");
     }
 
 }

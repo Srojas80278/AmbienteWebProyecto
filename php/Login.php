@@ -20,7 +20,7 @@ if(isset($_POST['InicioSesion'])) {
         exit(); 
     }else{
             echo "Credenciales invalidos";
-            header("refresh:1; url=../Login.html");
+            header("refresh:1; url=../Login.php");
         }
     
 

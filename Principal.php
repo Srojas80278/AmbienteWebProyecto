@@ -10,7 +10,6 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/utils.css" />
   <link rel="stylesheet" href="css/principal1.css" />
   
 </head>

@@ -40,6 +40,7 @@ document.addEventListener('click', e => {
         return true;
     }
 
+    
     function validarInicioSesion() {
         const usuario = document.getElementsByName("usuario_login")[0].value;
 
