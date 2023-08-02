@@ -1,7 +1,6 @@
+<title>Reservaciones</title>
 <?php include 'include/templates/header.php'; ?>
 <body>
-  
-
   <!-- Tarjetas de reservación 1-->
   <div class="container mt-5 mb-3">
     <div class="row">
@@ -33,7 +32,8 @@
                 <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0"
                   aria-valuemax="100"></div>
               </div>
-              <div class="mt-3"> <span class="text1">Gerente de Servicios - 10 años de experiencia </span> </div>
+              <div class="mt-3"> <span class="text1">Gerente de Servicios - 10 años de experiencia </span> </div><br>
+              <a title="Agendar una cita en el salón" class="btn btn-primary" href="#" role="button">Agendar Cita</a>
             </div>
           </div>
         </div>
@@ -52,8 +52,6 @@
             <div class="badge"> <span>Product</span> </div>
           </div>
           <div class="mt-5">
-
-
             <div class="container">
               <div class="row">
                 <div id="TitulosCartas" class="col-md-8">
@@ -65,14 +63,14 @@
                 </div>
               </div>
             </div>
-
-
             <div class="mt-5">
               <div id="ProgresoBarra2" class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0"
                   aria-valuemax="100"></div>
               </div>
               <div class="mt-3"> <span class="text1">Estilista Profesional - 08 años de Experiencia Local</span> </div>
+              <br>
+              <a class="btn btn-primary" href="FormularioCitas.php" role="button">Agendar Cita</a>
             </div>
           </div>
         </div>
@@ -110,6 +108,8 @@
                   aria-valuemax="100"></div>
               </div>
               <div class="mt-3"> <span class="text1">Estilista Profesional - 03 años de Experiencia Local</span> </div>
+              <br>
+              <a class="btn btn-primary" href="#" role="button">Agendar Cita</a>
             </div>
           </div>
         </div>
@@ -129,7 +129,6 @@
 
 
 <!-- Empieza Footer -->
-
 <!-- Footer -->
 <footer id="Footer" class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Social media -->
