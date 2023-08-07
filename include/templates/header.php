@@ -1,17 +1,21 @@
+<?php
+session_start(); // Iniciar sesion para poder aplicar acceso por roles
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/Reservar.css">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/Reservar.css">
 </head>
+
 <body>
-    
   <!-- Header -->
   <!-- Logo -->
   <header id="mi-header">
@@ -23,7 +27,6 @@
             Utopía Beauty Salón</a>
         </div>
       </nav>
-
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
@@ -39,10 +42,16 @@
             <li class="nav-item">
               <a class="nav-link active" href="ShoppingCart.php">Realizar Compra</a>
             </li>
+            <!--Se valida el rol del usuario para que este boton solo se muestre si se ha iniciado sesion como Admin -->
+            <li class="nav-item">
+              <?php if (isset($_SESSION['role_id']) && $_SESSION['role_id'] == 1): ?>
+                <a class="nav-link active" href="MOSTRAR-USUARIOS.php">Usuarios</a>
+              <?php endif; ?>
+            </li>
+
           </ul>
         </div>
       </div>
-
       <!-- Carrito de Compras -->
       <nav class="navbar bg-body-tertiary">
         <div class="container">
@@ -66,4 +75,4 @@
         </ul>
       </div>
     </nav>
-</header>
+  </header>

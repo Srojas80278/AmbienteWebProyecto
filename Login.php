@@ -24,12 +24,17 @@
                 <button class="sign-up-btn">Iniciar Sesión</button>
             </div>
         </div>
-        <form class="formulario" action="php/Registro.php" onsubmit="return validarRegistro()" method="POST">
+        <!--Validaciones respectivas que cumplan con los parametros establecidos-->
+        <form class="formulario" action="php/Registro.php" method="POST" onsubmit="return validarRegistro()">
             <h2 class="crear-cuenta">Registrate</h2>
             <p class="cuenta-gratis">Crear una cuenta</p>
-            <input type="text" placeholder="Usuario" name="usuario_registro" maxlength="20" required>
-            <input type="email" placeholder="Email" name="emial_registro" required>
-            <input type="password" placeholder="Contraseña" name="contrasena_registro" required>
+            <input type="text" placeholder="Usuario" name="usuario_registro" maxlength="20" minlength="3" required>
+            <span id="error_usuario" style="color: red; display: none;">El usuario es invalido</span>
+            <input type="text" placeholder="Email" name="email_registro" required>
+            <span id="error_correo" style="color: red; display: none;">El correo es invalido</span>
+            <input type="password" placeholder="Contraseña" name="contrasena_registro" minlength="8" required>
+            <span id="error_contrasena" style="color: red; display: none;">La contraseña necesita al menos 8 caracteres,
+                un número y un caracter especial</span>
             <input type="submit" value="Registrarse" name="RegistroSesion">
             <br>
             <hr>
@@ -39,10 +44,10 @@
                     <i class='bx bxl-facebook'></i>
                 </div>
                 <div class="border-icon">
-                    <i class='bx bxl-google' ></i>
+                    <i class='bx bxl-google'></i>
                 </div>
                 <div class="border-icon">
-                    <i class='bx bxl-linkedin' ></i>
+                    <i class='bx bxl-linkedin'></i>
                 </div>
             </div>
         </form>
@@ -53,7 +58,7 @@
             <p class="cuenta-gratis">¿Aún no tienes una cuenta?</p>
             <input type="text" placeholder="Usuario" name="usuario_login" required>
             <input type="password" placeholder="Contraseña" name="contrasena_login" required>
-            <input type="submit"  value="Iniciar sesion" name="InicioSesion">
+            <input type="submit" value="Iniciar sesion" name="InicioSesion">
             <br>
             <hr>
             <br>
@@ -62,15 +67,15 @@
                     <i class='bx bxl-facebook'></i>
                 </div>
                 <div class="border-icon">
-                    <i class='bx bxl-google' ></i>
+                    <i class='bx bxl-google'></i>
                 </div>
                 <div class="border-icon">
-                    <i class='bx bxl-linkedin' ></i>
+                    <i class='bx bxl-linkedin'></i>
                 </div>
             </div>
         </form>
         <div class="Bienvenido">
-            <div class="message" >
+            <div class="message">
                 <h2>Empieza ahora</h2>
                 <p>Si aún no tienes una cuenta por favor registrate y empieza a disfruta de los beneficios</p>
                 <button class="sign-in-btn">Registrarse</button>
