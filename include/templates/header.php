@@ -55,7 +55,7 @@ session_start(); // Iniciar sesion para poder aplicar acceso por roles
       <!-- Carrito de Compras -->
       <nav class="navbar bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="ShoppingCart.php">
+          <a class="navbar-brand" href="carrito.php">
             <img src="img/header/CarritoCompra.png" alt="" width="50" height="50">
           </a>
         </div>

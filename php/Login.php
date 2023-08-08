@@ -25,9 +25,11 @@ if (isset($_POST['InicioSesion'])) {
         if ($resultado && mysqli_num_rows($resultado) > 0) {
             $usuario = mysqli_fetch_assoc($resultado);
             $Rol = $usuario['role_id'];
+            $id = $usuario['id'];
 
             // Establecer la variable de sesión para el rol del usuario
             $_SESSION['role_id'] = $Rol;
+            $_SESSION['id'] = $id;
 
             // Redireccionar a Principal.php, en caso de cualquier tipo de error, se devuelve al login 
             header('Location: ../Principal.php');
