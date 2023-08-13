@@ -11,111 +11,120 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/principal1.css" />
-  
+
 </head>
 
 <body>
 
-<?php include 'include/templates/header.php'; ?>
+  <?php include 'include/templates/header.php'; ?>
 
   <!-- Main-->
   <br>
-  <h1 class="">Destacados</h1>
+  <h1 class="">Nuestros Productos</h1>
   <div class="container text-center">
-    
+
     <div class="row">
       <div class="col">
         <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="img/Tintes.jpg" />
-            <h4>Tintes de fantasia</h4>
-            <h4>Cantidad / Precio</h4>
-            <div class="input-group input-group-sm">
-          
-            <input data-cantidad-original="1" data-variant="none" type="text" class="form-control cart_quantity" data-label="814" data-pid="814" data-reserve="" id="814" value="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
-            <p class="p">/ ¢8500</p>
-          
-        </div>
-            <button type="button" class="btn btn-primary">Comprar</button>
+          <img class="card-img-top" src="img/Tintes.jpg" />
+          <h4>Tintes de fantasia</h4>
+          <h4> Precio</h4>
+          <h6> ¢8500</h6>
+          <div class="input-group input-group-sm">
+          </div>
+          <button type="button" class="btn btn-primary">Comprar</button>
+
           
         </div>
       </div>
       <div class="col">
         <div class="card" style="width: 20rem;">
-           <img class="card-img-top" src="img/Productos.jpg" />
-           <h4>Productos para el cabello</h4>
-            <h4>Cantidad / Precio</h4>
-            <div class="input-group input-group-sm">
-          <input data-cantidad-original="1" data-variant="none" type="text" class="form-control cart_quantity" data-label="814" data-pid="814" data-reserve="" id="814" value="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
-                <p class="p">/ ¢5000</p>
-             </div>
-            <button type="button" class="btn btn-primary">Comprar</button>
-          
-          </div>
+          <img class="card-img-top" src="img/Productos.jpg" />
+          <h4>Productos para el cabello</h4>
+          <h4> Precio</h4>
+          <h6> ¢5000</h6>
+          <button type="button" class="btn btn-primary">Comprar</button>
+
+        </div>
 
       </div>
       <div class="col">
         <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="img/Barberia.jpg" />
-            <h4>Productos de barberia</h4>
-             <h4>Cantidad / Precio</h4>
-             <div class="input-group input-group-sm">
-          <input data-cantidad-original="1" data-variant="none" type="text" class="form-control cart_quantity" data-label="814" data-pid="814" data-reserve="" id="814" value="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
-                <p class="p">/ ¢12000</p>
-            </div>
-             <button type="button" class="btn btn-primary">Comprar</button>
-          
-           </div>
+          <img class="card-img-top" src="img/Barberia.jpg" />
+          <h4>Productos de barberia</h4>
+          <h4> Precio</h4>
+          <h6> ¢12000</h6>
+          <button type="button" class="btn btn-primary">Comprar</button>
+
+        </div>
       </div>
     </div>
-   
+
   </div><br><br>
   <div class="container text-center">
     <div class="row">
       <div class="col">
         <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="img/esmalte.jpg" />
-            <h4>Esmalte de uñas</h4>
-            <h4>Cantidad / Precio</h4>
-            <div class="input-group input-group-sm">
-          
-            <input data-cantidad-original="1" data-variant="none" type="text" class="form-control cart_quantity" data-label="814" data-pid="814" data-reserve="" id="814" value="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
-            <p class="p">/ ¢5000</p>
-          
-        </div>
-            <button type="button" class="btn btn-primary">Comprar</button>
-          
+          <img class="card-img-top" src="img/esmalte.jpg" />
+          <h4>Esmalte de uñas</h4>
+          <h4> Precio</h4>
+          <h6> ¢5000</h6>
+          <button type="button" class="btn btn-primary">Comprar</button>
+
+        
+    </form>
+
+
         </div>
       </div>
+
+
+
       <div class="col">
         <div class="card" style="width: 20rem;">
-           <img class="card-img-top" src="img/Piel.jpg" />
-           <h4>Productos para la piel</h4>
-            <h4>Cantidad / Precio</h4>
-            <div class="input-group input-group-sm">
-          <input data-cantidad-original="1" data-variant="none" type="text" class="form-control cart_quantity" data-label="814" data-pid="814" data-reserve="" id="814" value="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
-                <p class="p">/ ¢5000</p>
-             </div>
-            <button type="button" class="btn btn-primary">Comprar</button>
-          
-          </div>
+          <img class="card-img-top" src="img/Piel.jpg" />
+          <h4>Productos para la piel</h4>
+          <h4> Precio</h4>
+          <h6> ¢5000</h6>
+
+          <button type="button" class="btn btn-primary">Comprar</button>
+
+        </div>
 
       </div>
       <div class="col">
         <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="img/crema.jpg" />
-            <h4>Cremas para el cuerpo</h4>
-             <h4>Cantidad / Precio</h4>
-             <div class="input-group input-group-sm">
-          <input data-cantidad-original="1" data-variant="none" type="text" class="form-control cart_quantity" data-label="814" data-pid="814" data-reserve="" id="814" value="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
-                <p class="p">/ ¢12000</p>
-            </div>
-             <button type="button" class="btn btn-primary">Comprar</button>
-          
-           </div>
+          <img class="card-img-top" src="img/crema.jpg" />
+          <h4>Cremas para el cuerpo</h4>
+          <h4> Precio</h4>
+          <h6> ¢12000</h6>
+
+          <button type="button" class="btn btn-primary">Comprar</button>
+
+        </div>
       </div>
     </div>
-   
+
   </div>
+  <!-- Prueba enviar
+  <div class="contendor-estetica">
+
+    <form action="php/procesar-producto_carrito.php" method="post">
+      <div>
+        <label for="descripcion">Descripcion:</label>
+        <input type="int" name="descripcion" id="descripcion" placeholder="Digita la descripcion">
+
+      </div>
+      <div>
+        <label for="precio">Precio:</label>
+        <input type="double" name="precio" id="precio" placeholder="Digita el precio">
+      </div>
+
+      <button type="submit">Comprar</button>
+    </form>
+-->
+  </div>
+  <!-- Prueba enviar-->
 
 
   <br>
@@ -123,9 +132,12 @@
   <br>
   <br>
   <div class="container text-center">
-  <h2 class="">Encuentranos en:</h2>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.3959514692547!2d-84.07062492524774!3d9.900942590199444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e34c171c793b%3A0xd93f42824d46b852!2zVXRvcMOtYSBCZWF1dHkgU2Fsw7Nu!5e0!3m2!1ses-419!2scr!4v1690477841853!5m2!1ses-419!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+    <h2 class="">Encuentranos en:</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.3959514692547!2d-84.07062492524774!3d9.900942590199444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e34c171c793b%3A0xd93f42824d46b852!2zVXRvcMOtYSBCZWF1dHkgU2Fsw7Nu!5e0!3m2!1ses-419!2scr!4v1690477841853!5m2!1ses-419!2scr"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 
 
 
@@ -136,8 +148,8 @@
 
   <!-- Agregamos Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+  </script>
 </body>
 
 

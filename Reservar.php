@@ -1,5 +1,13 @@
+<head>
+
+  <link rel="stylesheet" href="css/Reservar.css" />
+
+</head>
+
 <title>Reservaciones</title>
 <?php include 'include/templates/header.php'; ?>
+
+
 <body>
   <!-- Tarjetas de reservación 1-->
   <div class="container mt-5 mb-3">
@@ -118,13 +126,60 @@
   </div>
   <!-- Tarjetas de reservación -->
 
+  <!-- Servicios -->
+
+
+  <center>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide w-50 text-align: center"" data-bs-ride=" carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Servicio1.jpeg" class="d-block w-100" alt="...">
+          <h4 class="h4">Makeup</h4>
+          <hr>
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/Servicio2.jpg" class="d-block w-100" alt="...">
+          <h4>Hairdressing</h4>
+          <hr>
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/Servicio3.jpeg" class="d-block w-100" alt="...">
+          <h4>Skin care</h4>
+          <hr>
+
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</center>
+
+  <!-- </div> -->
+
+
+
+
+  <!-- Servicios -->
+
 
 
 
   <!-- Agregamos Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+  </script>
 </body>
 
 
