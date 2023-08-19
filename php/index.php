@@ -18,9 +18,6 @@
 
     <div class="container-fluid row">
         <form class="col-4">
-            <button id="mostrarFormulario" class="btn btn-primary">Mostrar Formulario</button>
-
-            <div id="formularioContainer" class="col-4" style="display: none;">
                 <h3 class="text-center text-secondary">Registro de Personas</h3>
 
                 <!-- Estilista -->
@@ -72,10 +69,7 @@
                         aria-describedby="emailHelp">
                 </div>
                 <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok">Registrar Cita</button>
-                <button id="ocultarFormulario" class="btn btn-secondary">Cancelar Formulario de Cita</button>
         </form>
-
-    </div>
 
     <!-- Div derecho --> <!-- p-4: Darle padding de 4 -->
     <div class="col-8 p-4">
@@ -158,27 +152,7 @@
         const fechaMinima = `${anio}-${mes}-${dia}`;
         fechaInput.min = fechaMinima;
     </script>
-
-    <script>
-        document.getElementById('mostrarFormulario').addEventListener('click', function (event) {
-            event.preventDefault(); // Evitar la acción por defecto (recarga de la página)
-            var formularioContainer = document.getElementById('formularioContainer');
-            formularioContainer.style.display = 'block'; // Muestra el formulario
-        });
-    </script>
-
-    <script>
-        document.getElementById('mostrarFormulario').addEventListener('click', function () {
-            var formularioContainer = document.getElementById('formularioContainer');
-            formularioContainer.style.display = 'block'; // Muestra el formulario
-        });
-
-        document.getElementById('ocultarFormulario').addEventListener('click', function () {
-            var formularioContainer = document.getElementById('formularioContainer');
-            formularioContainer.style.display = 'none'; // Oculta el formulario
-        });
-    </script>
-
+    
 
 </body>
 
