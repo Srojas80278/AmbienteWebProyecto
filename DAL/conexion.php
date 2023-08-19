@@ -5,7 +5,7 @@ function Conecta()
     $server = "localhost";
     $user = "root";
     $password = "";
-    $dataBase = "web";
+    $dataBase = "ambienteweb";
 
 
     // 1. Establecer la conexión con el motor de base de datos
