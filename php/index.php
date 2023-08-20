@@ -17,8 +17,14 @@
     <h1 class="text-center">Hola Mundo</h1>
 
     <div class="container-fluid row">
-        <form class="col-4">
+        <form class="col-4" method="POST">
                 <h3 class="text-center text-secondary">Registro de Personas</h3>
+
+                <?php 
+                include "modeloCitas/conexionn.php";
+                include "controladorCitas/registro_citas.php";
+                
+                ?>
 
                 <!-- Estilista -->
                 <div class="mb-3">
@@ -116,8 +122,10 @@
                             <?php echo $datos->descripcion_servicio; ?>
                         </td>
                         <td>
-                            <a href="" class="btn btn-primary"><i class="fa-solid fa-user-pen"></i></a>
-                            <a href="" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary btn-sm d-inline-block"><i class="fa-solid fa-user-pen fa-sm"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm d-inline-block"><i class="fa-solid fa-trash fa-sm"></i></a>
+                        </div>
                         </td>
                     </tr>
                 <?php }
