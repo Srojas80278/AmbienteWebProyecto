@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20%;
+    background-color: #f7f7f7;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.mensaje {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+.info-usuario {
+    margin-bottom: 20px;
+}
+
+.info-usuario p {
+    margin: 0;
+    color: #555;
+}
+
+.tabla-factura {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabla-factura th, .tabla-factura td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    color: #333;
+}
+
+.tabla-factura th {
+    background-color: #f2f2f2;
+}
+
+.total {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}

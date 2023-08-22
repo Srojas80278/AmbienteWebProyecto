@@ -81,9 +81,12 @@
         </p>
 
         <div class="buttonsCart">
-            <a href="#">Seguir comprando</a>
-            <a href="#">Comprar</a>
+            <a href="principal.php">Seguir comprando</a>
+            <form action="php/Carrito/generarFactura.php" method="post">
+                <button type="submit" name="comprar">Comprar</button>
+            </form>
         </div>
+
     </div>
 
     <?php include 'include/templates/footer.php'; ?>
