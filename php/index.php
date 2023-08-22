@@ -4,17 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CITAS CRUD</title>
+    <title>Reservación Citas | Utopía Salón</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0daff66fe6.js" crossorigin="anonymous"></script>
 </head>
 
-
 <body>
 
-    <h1 class="text-center">Hola Mundo</h1>
+    <header id="mi-header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/header/Logo2.png" alt="" width="50" height="50">
+                        Utopía Beauty Salón</a>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Principal.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.php">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Reservar.php">Reservar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ShoppingCart.php">Realizar Compra</a>
+                        </li>
+                        <!--Se valida el rol del usuario para que este boton solo se muestre si se ha iniciado sesion como Admin -->
+                        <li class="nav-item">
+                            <?php if (isset($_SESSION['role_id']) && $_SESSION['role_id'] == 1): ?>
+                                <a class="nav-link active" href="MOSTRAR-USUARIOS.php">Usuarios</a>
+                            <?php endif; ?>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- Carrito de Compras -->
+            <nav class="navbar bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="carrito.php">
+                        <img src="img/header/CarritoCompra.png" alt="" width="50" height="50">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- DropDown -->
+            <div class="dropdown dropstart">
+                <a id="BotonDropDown" class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/header/Logo2.png" alt="" width="30" height="30">
+                </a>
+                </a>
+                <ul id="DropDesplegado" class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="checkout.php">Métodos de pago</a></li>
+                    <li><a class="dropdown-item" href="php/Salir.php">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-8 mx-auto">
+                <div class="text-center border p-4 rounded bg-light mb-4">
+                    <h1 class="display-4 text-bold">Reservación de Citas</h1>
+                    <p class="lead">Agenda tu cita para disfrutar de nuestros servicios.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <?php
     include "modeloCitas/conexionn.php";
     include "controladorCitas/eliminar_citas.php";
@@ -46,7 +118,7 @@
                 <!-- Hora de la cita -->
                 <div class="mb-3">
                     <label for="horaCita" class="form-label">Hora de la cita:</label>
-                    <input type="time" class="form-control" id="horaCita" name="horaCita" >
+                    <input type="time" class="form-control" id="horaCita" name="horaCita">
                 </div>
 
 
@@ -172,12 +244,10 @@
         </div>
     </div>
 
-
     <!-- JavaScript  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-
 
     <!-- Ajustamos para que el cliente solo pueda agendar citas para el dia siguiente. -->
     <script>

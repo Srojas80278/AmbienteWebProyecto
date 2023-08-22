@@ -31,7 +31,7 @@
                   <h5>Gerente General</h5>
                 </div>
                 <div class="col-md-4">
-                  <img src="img/Cabello_10.jpg" alt="Imagen" class="img-fluid" style="width: 300px; height: auto;">
+                  <img src="img/Estilista4.jpg" alt="Imagen" class="img-fluid" style="width: 300px; height: auto;">
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@
                   aria-valuemax="100"></div>
               </div>
               <div class="mt-3"> <span class="text1">Gerente de Servicios - 10 años de experiencia </span> </div><br>
-              <a title="Agendar una cita en el salón" class="btn btn-primary" href="#" role="button">Agendar Cita</a>
+              <a title="Agendar una cita en el salón" class="btn btn-primary" href="php/index.php" role="button">Agendar Cita</a>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@
                   <h5>Administrador Sr</h5>
                 </div>
                 <div class="col-md-4">
-                  <img src="img/Cabello_10.jpg" alt="Imagen" class="img-fluid" style="width: 300px; height: auto;">
+                  <img src="img/Estilista3.jpg" alt="Imagen" class="img-fluid" style="width: 300px; height: auto;">
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@
               </div>
               <div class="mt-3"> <span class="text1">Estilista Profesional - 08 años de Experiencia Local</span> </div>
               <br>
-              <a class="btn btn-primary" href="FormularioCitas.php" role="button">Agendar Cita</a>
+              <a class="btn btn-primary" href="php/index.php" role="button">Agendar Cita</a>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@
                   <h5>Administrador Jr</h5>
                 </div>
                 <div class="col-md-4">
-                  <img src="img/Cabello_10.jpg" alt="Imagen" class="img-fluid" style="width: 300px; height: auto;">
+                  <img src="img/Estilista2.jpg" alt="Imagen" class="img-fluid" style="width: 300px; height: auto;">
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@
               </div>
               <div class="mt-3"> <span class="text1">Estilista Profesional - 03 años de Experiencia Local</span> </div>
               <br>
-              <a class="btn btn-primary" href="#" role="button">Agendar Cita</a>
+              <a class="btn btn-primary" href="php/index.php" role="button">Agendar Cita</a>
             </div>
           </div>
         </div>
@@ -130,8 +130,13 @@
 
 
   <center>
+<<<<<<< Updated upstream
   <h1>Servicios</h1>
     <div id="carouselExampleAutoplaying" class="carousel slide w-50 text-align: center"" data-bs-ride=" carousel">
+=======
+
+    <div id="carouselExampleAutoplaying" class="carousel slide w-50 text-align: center" data-bs-ride=" carousel">
+>>>>>>> Stashed changes
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/Servicio1.jpeg" class="d-block w-100" alt="...">
@@ -170,13 +175,6 @@
 </center>
 
   <!-- </div> -->
-
-
-
-
-  <!-- Servicios -->
-
-
 
 
   <!-- Agregamos Bootstrap JS -->
