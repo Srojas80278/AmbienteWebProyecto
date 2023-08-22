@@ -13,13 +13,9 @@
 
 <body>
 
-<?php
+    <?php
     include('../include/templates/headerPHP.php');
     ?>
-
-
-
-
 
     <div class="container">
         <div class="row mt-5">
@@ -189,9 +185,90 @@
         </div>
     </div>
 
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Preguntas Frecuentes - Módulo de Citas</h2>
+
+        <div class="accordion" id="faqAccordion">
+            <!-- Pregunta 1 -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cómo puedo agendar una cita?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Para agendar una cita, sigue estos pasos:
+                        <ol>
+                            <li>Inicia sesión en tu cuenta.</li>
+                            <li>Ve a la sección de Agendar Citas.</li>
+                            <li>Selecciona la fecha y hora deseada.</li>
+                            <li>Elige el servicio que te gustaría recibir.</li>
+                            <li>Confirma la cita.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Puedo cancelar o reprogramar una cita?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Sí, puedes cancelar o reprogramar una cita siguiendo estos pasos:
+                        <ol>
+                            <li>Inicia sesión en tu cuenta.</li>
+                            <li>Ve a la sección de Mis Citas.</li>
+                            <li>Encuentra la cita que deseas modificar y selecciona "Eliminar" o "Editar".</li>
+                            <li>Sigue las instrucciones y confirma.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Puedo ver mis citas anteriores?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Sí, puedes ver tus citas anteriores siguiendo estos pasos:
+                        <ol>
+                            <li>Inicia sesión en tu cuenta.</li>
+                            <li>Ve a la sección de Mis Citas.</li>
+                            <li>Verás una lista de tus citas anteriores junto con los detalles correspondientes.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br><br>
+
     <?php
     include('../include/templates/footer.php');
     ?>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- JavaScript  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
