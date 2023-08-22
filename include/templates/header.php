@@ -37,7 +37,9 @@ session_start(); // Iniciar sesion para poder aplicar acceso por roles
               <a class="nav-link active" href="Reservar.php">Reservar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="ShoppingCart.php">Realizar Compra</a>
+              <a class="nav-link active" href="php/Carrito/generarFactura.php">Realizar Compra</a>
+          
+            
             </li>
             <!--Se valida el rol del usuario para que este boton solo se muestre si se ha iniciado sesion como Admin -->
             <li class="nav-item">
