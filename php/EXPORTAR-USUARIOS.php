@@ -39,11 +39,11 @@ $fileName = 'reporte_usuarios.csv';
 $tempFile = fopen('php://temp', 'w');
 
 // Encabezados del archivo CSV, separados por ; para que lo haga por casillas y no todo junto
-$csvData = "ID;Nombre Completo;Email;Password;Rol\r\n";
+$csvData = "ID,Nombre Completo,Email,Password,Rol\r\n";
 
 // Agregar los datos de los usuarios al archivo CSV, separados por ; para que lo haga por casillas y no todo junto
 foreach ($datosUsuarios as $usuario) {
-    $csvData .= $usuario['id'] . ";" . $usuario['NombreCompleto'] . ";" . $usuario['Email'] . ";" . $usuario['Password'] . ";" . $usuario['Rol'] . "\r\n";
+    $csvData .= $usuario['id'] . "," . $usuario['NombreCompleto'] . "," . $usuario['Email'] . "," . $usuario['Password'] . "," . $usuario['Rol'] . "\r\n";
 }
 
 // Escribir el contenido del archivo CSV en el archivo temporal
