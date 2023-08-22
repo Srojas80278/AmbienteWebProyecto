@@ -1,4 +1,6 @@
 <?php
+
+
 if (!empty($_POST["btnregistrar"])) {
     if (
         !empty($_POST["estilista"]) && !empty($_POST["fechaCita"]) && !empty($_POST["horaCita"]) &&
@@ -25,7 +27,7 @@ if (!empty($_POST["btnregistrar"])) {
         } else {
             echo '<div class="alert alert-danger" role="alert">Error al registrar</div>';
         }
-        
+         
     } else {
         echo '<div class="alert alert-warning" role="alert">Revisa que todos los campos estén llenos</div>';
     }

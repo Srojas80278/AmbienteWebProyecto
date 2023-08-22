@@ -15,131 +15,161 @@
 <body>
 
     <h1 class="text-center">Hola Mundo</h1>
+    <?php
+    include "modeloCitas/conexionn.php";
+    include "controladorCitas/eliminar_citas.php";
+    ?>
 
     <div class="container-fluid row">
-        <form class="col-4" method="POST">
-                <h3 class="text-center text-secondary">Registro de Personas</h3>
+        <div class="col-lg-4 col-md-6 border p-4 mx-auto my-4">
+            <form method="POST" class="pl-4">
+                <h3 class="text-center text-primary mb-4">Registro de Personas</h3>
 
-                <?php 
+                <?php
                 include "modeloCitas/conexionn.php";
                 include "controladorCitas/registro_citas.php";
-                
                 ?>
 
                 <!-- Estilista -->
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Estilista:</label>
-                    <input type="text" class="form-control" name="estilista"
-                        placeholder="Ingresa el nombre del estilista" aria-describedby="emailHelp">
+                    <label for="estilista" class="form-label">Estilista:</label>
+                    <input type="text" class="form-control" id="estilista" name="estilista"
+                        placeholder="Ingresa el nombre del estilista">
                 </div>
 
                 <!-- Fecha de la cita -->
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Fecha de la cita:</label>
-                    <input type="date" class="form-control" name="fechaCita" id="fechaCita"
-                        aria-describedby="emailHelp">
+                    <label for="fechaCita" class="form-label">Fecha de la cita:</label>
+                    <input type="date" class="form-control" id="fechaCita" name="fechaCita">
                 </div>
 
                 <!-- Hora de la cita -->
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Hora de la cita (Ejemplo 7:00 pm):</label>
-                    <input type="text" class="form-control" name="horaCita" placeholder="7:00 pm, 8:00 pm, 6:00 pm"
-                        aria-describedby="emailHelp">
+                    <label for="horaCita" class="form-label">Hora de la cita:</label>
+                    <input type="time" class="form-control" id="horaCita" name="horaCita" >
                 </div>
+
+
 
                 <!-- Sede de la cita -->
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Sede:</label>
-                    <input type="text" class="form-control" name="sede" placeholder="Ingresa la sede de la cita"
-                        aria-describedby="emailHelp">
+                    <label for="sede" class="form-label">Sede:</label>
+                    <input type="text" class="form-control" id="sede" name="sede"
+                        placeholder="Ingresa la sede de la cita">
                 </div>
 
                 <!-- NombreCliente -->
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nombre del cliente:</label>
-                    <input type="text" class="form-control" name="nombreCliente" placeholder="Nombre del Cliente"
-                        aria-describedby="emailHelp" minlength="3">
+                    <label for="nombreCliente" class="form-label">Nombre del cliente:</label>
+                    <input type="text" class="form-control" id="nombreCliente" name="nombreCliente"
+                        placeholder="Nombre del Cliente" minlength="3">
                 </div>
 
                 <!-- Servicio a realizar -->
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Servicio a realizar:</label>
-                    <input type="text" class="form-control" name="Servicio"
-                        placeholder="Servicio (Manicure, Color, Highlights)" aria-describedby="emailHelp">
+                    <label for="servicio" class="form-label">Servicio a realizar:</label>
+                    <input type="text" class="form-control" id="servicio" name="Servicio"
+                        placeholder="Servicio (Manicure, Color, Highlights)">
                 </div>
 
                 <!-- Correo cliente -->
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Correo Electrónico:</label>
-                    <input type="email" class="form-control" name="correo" placeholder="Ingresa un correo electrónico"
-                        aria-describedby="emailHelp">
+                    <label for="correo" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="correo" name="correo"
+                        placeholder="Ingresa un correo electrónico">
                 </div>
-                <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok">Registrar Cita</button>
-        </form>
 
-    <!-- Div derecho --> <!-- p-4: Darle padding de 4 -->
-    <div class="col-8 p-4">
-        <table class="table">
-            <thead class="table-primary">
-                <tr>
-                    <th scope="col">#Cita</th>
-                    <th scope="col">Estilista</th>
-                    <th scope="col">Fecha</th>
-                    <th scope="col">Hora</th>
-                    <th scope="col">Sede</th>
-                    <th scope="col">Cliente</th>
-                    <th scope="col">Servicio</th>
-                    <th scope="col">Correo Cliente</th>
-                    <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                include "modeloCitas/conexionn.php";
-                $sql = $conexion->query("SELECT * FROM Citas");
-                while ($datos = $sql->fetch_object()) { ?>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>
-                            <?php echo $datos->estilista; ?>
-                        </td>
-                        <td>
-                            <?php echo $datos->fecha; ?>
-                        </td>
-                        <td>
-                            <?php echo $datos->hora; ?>
-                        </td>
-                        <td>
-                            <?php echo $datos->sede; ?>
-                        </td>
-                        <td>
-                            <?php echo $datos->nombre_cliente; ?>
-                        </td>
-                        <td>
-                            <?php echo $datos->servicio; ?>
-                        </td>
-                        <td>
-                            <?php echo $datos->descripcion_servicio; ?>
-                        </td>
-                        <td>
-                        <div class="btn-group">
-                            <a href="#" class="btn btn-primary btn-sm d-inline-block"><i class="fa-solid fa-user-pen fa-sm"></i></a>
-                            <a href="#" class="btn btn-danger btn-sm d-inline-block"><i class="fa-solid fa-trash fa-sm"></i></a>
-                        </div>
-                        </td>
-                    </tr>
-                <?php }
-                ?>
+                <button type="submit" class="btn btn-primary mt-3" name="btnregistrar" value="ok">Registrar
+                    Cita</button>
+            </form>
+        </div>
 
 
+        <!-- Div derecho --> <!-- p-4: Darle padding de 4 -->
+        <div class="col-lg-8 col-md-6">
+            <div class="p-4">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="table-primary">
+                            <tr>
+                                <th scope="col">#Cita</th>
+                                <th scope="col">Estilista</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Hora</th>
+                                <th scope="col">Sede</th>
+                                <th scope="col">Cliente</th>
+                                <th scope="col">Servicio</th>
+                                <th scope="col">Correo Cliente</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            include "modeloCitas/conexionn.php";
+                            $sql = $conexion->query("SELECT * FROM Citas");
+                            while ($datos = $sql->fetch_object()) { ?>
+                                <tr>
+                                    <td>
+                                        <?php echo $datos->id_cita; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $datos->estilista; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $datos->fecha; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $datos->hora; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $datos->sede; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $datos->nombre_cliente; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $datos->servicio; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $datos->descripcion_servicio; ?>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="modificar_cita.php?id=<?= $datos->id_cita ?>"
+                                                class="btn btn-primary btn-sm d-inline-block"><i
+                                                    class="fa-solid fa-user-pen fa-sm"></i></a>
+                                            <a href="#" class="btn btn-danger btn-sm d-inline-block delete-link"
+                                                data-id="<?= $datos->id_cita ?>"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php }
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-            </tbody>
-        </table>
-    </div> <!-- Finaliza listado -->
-
-
+    <!-- Modal de confirmación -->
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmDeleteModalLabel">Confirmar Eliminación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Estás seguro de que deseas eliminar esta cita?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <a href="#" id="deleteLink" class="btn btn-danger">Eliminar</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -160,8 +190,23 @@
         const fechaMinima = `${anio}-${mes}-${dia}`;
         fechaInput.min = fechaMinima;
     </script>
-    
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const deleteLinks = document.querySelectorAll('.delete-link');
+            const confirmDeleteModal = new bootstrap.Modal(document.getElementById('confirmDeleteModal'));
+            const deleteLink = document.getElementById('deleteLink');
+
+            deleteLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const id = this.getAttribute('data-id');
+                    deleteLink.href = `index.php?id=${id}`;
+                    confirmDeleteModal.show();
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
