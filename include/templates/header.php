@@ -34,9 +34,6 @@ session_start(); // Iniciar sesion para poder aplicar acceso por roles
               <a class="nav-link active" aria-current="page" href="Principal.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="services.php">Servicios</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link active" href="Reservar.php">Reservar</a>
             </li>
             <li class="nav-item">

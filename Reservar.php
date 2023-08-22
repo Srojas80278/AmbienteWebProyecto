@@ -130,7 +130,7 @@
 
 
   <center>
-
+  <h1>Servicios</h1>
     <div id="carouselExampleAutoplaying" class="carousel slide w-50 text-align: center"" data-bs-ride=" carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -152,6 +152,9 @@
 
         </div>
       </div>
+      <p>
+        Descubre nuestra magia del maquillaje. Destacamos tu belleza con estilo y elegancia. Nuestros artistas del maquillaje te brindan un servicio excepcional, siguiendo las últimas tendencias. Resalta tus rasgos únicos y siéntete radiante en cualquier ocasión. ¡Déjanos realzar tu esencia!
+      </p>
 
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="prev">
