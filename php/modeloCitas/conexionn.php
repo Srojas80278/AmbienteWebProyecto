@@ -2,6 +2,6 @@
 $server = "localhost";
 $user = "root";
 $password = "";
-$database = "ambienteweb"; 
+$database = "web"; 
 $conexion = new mysqli($server, $user, $password, $database);
 ?>

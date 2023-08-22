@@ -130,13 +130,8 @@
 
 
   <center>
-<<<<<<< Updated upstream
   <h1>Servicios</h1>
     <div id="carouselExampleAutoplaying" class="carousel slide w-50 text-align: center"" data-bs-ride=" carousel">
-=======
-
-    <div id="carouselExampleAutoplaying" class="carousel slide w-50 text-align: center" data-bs-ride=" carousel">
->>>>>>> Stashed changes
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/Servicio1.jpeg" class="d-block w-100" alt="...">
