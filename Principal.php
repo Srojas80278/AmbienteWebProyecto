@@ -20,116 +20,102 @@
 
   <!-- Main-->
   <br>
-  <h1 class="">Nuestros Productos</h1>
+  
+  <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+  <a class="navbar-brand" href=""></a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1">Nuestros Productos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">Nosotros</a>
+    </li>
+  
+  </ul>
+</nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+  <h4 id="scrollspyHeading1"></h4>
+  <p>
+    
   <div class="container text-center">
+        <h1>Nuestros Productos</h1>
 
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="img/Tintes.jpg" />
-          <h4>Tintes de fantasia</h4>
-          <h4> Precio</h4>
-          <h6> ¢8500</h6>
-          <div class="input-group input-group-sm">
-          </div>
-          <button type="button" class="btn btn-primary">Comprar</button>
+        <?php
+        require 'DAL/conexion.php';
 
-          
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="img/Productos.jpg" />
-          <h4>Productos para el cabello</h4>
-          <h4> Precio</h4>
-          <h6> ¢5000</h6>
-          <button type="button" class="btn btn-primary">Comprar</button>
-
-        </div>
-
-      </div>
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="img/Barberia.jpg" />
-          <h4>Productos de barberia</h4>
-          <h4> Precio</h4>
-          <h6> ¢12000</h6>
-          <button type="button" class="btn btn-primary">Comprar</button>
-
-        </div>
-      </div>
-    </div>
-
-  </div><br><br>
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="img/esmalte.jpg" />
-          <h4>Esmalte de uñas</h4>
-          <h4> Precio</h4>
-          <h6> ¢5000</h6>
-          <button type="button" class="btn btn-primary">Comprar</button>
-
+        $conexion = Conecta();
+        $query = "SELECT id_producto, nombre, descripcion, img, precio FROM productos";
+        $result = mysqli_query($conexion, $query);
+  
         
-    </form>
+        if (mysqli_num_rows($result) > 0) {
+          
+            while ($fila = mysqli_fetch_assoc($result)) {
+            
+              echo '<div class="container text-center">';
 
+              echo '<div  class="row">';
+              echo '<div   class="col">';
+              echo '<div class="card" style="width: 40rem;>';
+                echo '<div class="producto-details">';
+                echo '<img src="' . $fila['img'] . '" alt="' . $fila['nombre'] . '">';
+                echo '<h2>' . $fila['nombre'] . '</h2>';
+                echo '<p>' . $fila['descripcion'] . '</p>';
+                echo '<p>Precio: $' . $fila['precio'] . '</p>';
+              
+                echo '<form action="php/Carrito/agregarItem.php" method="post">';
+                echo '<input type="hidden" name="product_id" value="' . $fila['id_producto'] . '">';
+                echo '<input type="number" name="quantity" value="1">';
+                echo '<input type="hidden" name="price" value="' . $fila['precio'] . '">';
+                echo '<button type="submit" class="btn btn-primary">Agregar al Carrito</button>';
+               
+                echo '</form>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+               
+                echo '<br>';
+  
 
-        </div>
-      </div>
+            }
+           
+        } else {
+            echo '<p>Compra tu primer producto en la tienda.</p>';
+        }
 
-
-
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="img/Piel.jpg" />
-          <h4>Productos para la piel</h4>
-          <h4> Precio</h4>
-          <h6> ¢5000</h6>
-
-          <button type="button" class="btn btn-primary">Comprar</button>
-
-        </div>
-
-      </div>
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="img/crema.jpg" />
-          <h4>Cremas para el cuerpo</h4>
-          <h4> Precio</h4>
-          <h6> ¢12000</h6>
-
-          <button type="button" class="btn btn-primary">Comprar</button>
-
-        </div>
-      </div>
+        ?>
     </div>
 
+
+  
+ 
   </div>
-  <!-- Prueba enviar
-  <div class="contendor-estetica">
+  </p>
 
-    <form action="php/procesar-producto_carrito.php" method="post">
-      <div>
-        <label for="descripcion">Descripcion:</label>
-        <input type="int" name="descripcion" id="descripcion" placeholder="Digita la descripcion">
+  <h4 id="scrollspyHeading2"></h4>
+  <p>
+<!--
+      -->
+      <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+  <a class="navbar-brand" href=""></a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1">Nuestros Productos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">Nosotros</a>
+    </li>
+    
+   
+  </ul>
+</nav>
 
-      </div>
-      <div>
-        <label for="precio">Precio:</label>
-        <input type="double" name="precio" id="precio" placeholder="Digita el precio">
-      </div>
-
-      <button type="submit">Comprar</button>
-    </form>
--->
-  </div>
-  <!-- Prueba enviar-->
-
+      <!--
+      -->
 
   <br>
-  <br>
-  <br>
+
   <br>
   <div class="container text-center">
     <h2 class="">Encuentranos en:</h2>
@@ -137,8 +123,43 @@
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.3959514692547!2d-84.07062492524774!3d9.900942590199444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e34c171c793b%3A0xd93f42824d46b852!2zVXRvcMOtYSBCZWF1dHkgU2Fsw7Nu!5e0!3m2!1ses-419!2scr!4v1690477841853!5m2!1ses-419!2scr"
       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
+     
+    </div>
+    <div class="container text-center">
+  
+  <div class="card">
+  <h5 class="card-header"></h5>
+  <div class="card-body">
+    <h5 class="card-title">Nuestra misión</h5>
+    <p class="card-text">
+    El objetivo fundamental de la Utopía Beauty Salón es ofrecer productos de alta calidad, así como asesorías para que los clientes lleven consigo el producto más adecuado, de acuerdo a sus necesidades e intereses. Además, Utopía Beauty Salón
+ cuenta con un sistema de afiliación exclusivo para profesionales en el campo de la belleza, brindándoles así beneficios especiales, convirtiéndose en una especie de “mano derecha” entre estilistas, manicuristas y esteticistas, de acuerdo a una encuesta realizada recientemente.
 
+  Ven a experimentar un día de bienestar y cuidado personal en nuestro salón. 
+  Te esperamos. Utopía Beauty Salón te ofrece servicios de cuidado capilar, uñas y estética,
+   todo en un mismo lugar.
+    </p>
+    <a href="Reservar.php" class="btn btn-primary">Agenda nuestros servicios</a>
+  </div>
+</div>
+
+
+
+  </p>
+
+</div>
+
+
+ 
+     
+
+
+
+
+
+  
+
+</div>
 
 
   <!---->

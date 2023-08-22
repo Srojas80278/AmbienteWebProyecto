@@ -135,13 +135,13 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/Servicio1.jpeg" class="d-block w-100" alt="...">
-          <h4 class="h4">Makeup</h4>
+          <h4 >Makeup</h4>
           <hr>
 
         </div>
         <div class="carousel-item">
           <img src="img/Servicio2.jpg" class="d-block w-100" alt="...">
-          <h4>Hairdressing</h4>
+          <h4 >Hairdressing</h4>
           <hr>
 
         </div>
