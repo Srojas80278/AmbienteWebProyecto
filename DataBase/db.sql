@@ -41,3 +41,16 @@ CREATE TABLE carrito (
     FOREIGN KEY (userId) REFERENCES users(id),
     FOREIGN KEY (id_producto) REFERENCES productos(id_producto)
 );
+
+/* Insert a la tabla producto*/
+INSERT INTO `productos` (`id_producto`, `descripcion`, `precio`, `nombre`, `img`) VALUES
+(15, 'Shampoo hidratante de aceite de coco', 10, 'Shampoo Coco', 'img/shampoo_coco.jpg'),
+(16, 'Maquillaje con aroma a manzana', 20, 'Maquillaje Manzana', 'img/maquillaje_manzana.jpg'),
+(17, 'Crema facial de menta y árbol de té', 15, 'Crema Facial Menta', 'img/crema_menta.jpg'),
+(18, 'Esmalte de uñas hecho de plástico reciclado', 8, 'Esmalte de Uñas', 'img/esmalte_reciclado.jpg'),
+(19, 'Tintes de fantasia para todo tipo de pelo', 4.5, 'Tintes', 'img/Tintes.jpg'),
+(20, 'Productos para el cabello', 2.5, 'Cremas', 'img/Productos.jpg'),
+(21, 'Productos de barberia', 2.5, 'Cremas para afectar', 'img/Barberia.jpg'),
+(22, 'Esmaltes de uñas de diferentes coloes', 2.5, 'Esmaltes', 'img/esmalte.jpg'),
+(23, 'Productos para la piel', 6, 'Maquillaje', 'img/Piel.jpg'),
+(24, 'Cremas para el cuerpo', 6, 'Cremas', 'img/crema.jpg');
